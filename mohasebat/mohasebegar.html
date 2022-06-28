@@ -1,0 +1,139 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="در ریاضینو مقالات و محاسبه گر های ریاضی برای یادگیری بهتر ریاضی وجود دارد">
+    <meta name="keywords" content="ریاضی , math">
+    <meta name="author" content="@iliya_mansouri_018">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="assets/css/mohasebegar.css">
+    <link rel="stylesheet" href="../index/fonts/font.css">
+    <title>محاسبه گر</title>
+</head>
+
+<body>
+    <div class="asli">
+        <nav class="navbar-column">
+            <img class="img-logo" src="https://upload.wikimedia.org/wikipedia/fa/c/c3/Sampad.png" alt="" width="50px"
+                height="50px">
+            <ul class="ul-navbar">
+                <li class="li-navbar"><a href="../index.html">خانه</a></li>
+                <li class="li-navbar"><a href="../mataleb/mataleb.html">مطالب</a></li>
+                <li class="li-navbar"><a href="../mohasebat/mohasebegar.html">محاسبه گر</a></li>
+                <li class="li-navbar"><a href="#">آزمون</a></li>
+            </ul>
+        </nav>
+        <div class="img-column">
+            <img src="assets/image/math.jpg" class="head-img">
+            <div class="content-img-column">
+                <div class="container-img-column">
+                    <div class="div-title-img-column">
+                        <h1 class="title-img-column">مطالب</h1>
+                    </div>
+                    <div class="div-p-img-column">
+                        <P class="p-img-column">در این بخش محاسبه گر هایی برای برخی مباحث ریاضی پایه نهم قرار
+                            میگیرد.
+                        </P>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blog-asli">
+            <div class="blog-container">
+                <div class="wrap" id="goya">
+                    <div class="into">
+                        <p style="color: #7aa228;font-weight: bold;font-family: 'IRANSans-web';font-size: 25px">پیدا
+                            کردن
+                            عدد گویا
+                            بین دو عدد گویا</p>
+                        <div class="frac">
+                            <span><input type="number" class="input" id="karse-one-sorat" required min="1"></span>
+                            <span class="symbol">/</span>
+                            <span class="bottom"><input type="number" class="input" id="karse-one-makhraj" required
+                                    min="1"></span>
+                        </div>
+                        <span class="width">&</span>
+                        <div class="frac">
+                            <span><input type="number" class="input" id="karse-two-sorat" required min="1"></span>
+                            <span class="symbol">/</span>
+                            <span class="bottom"><input type="number" class="input" id="karse-two-makhraj" required
+                                    min="1"></span>
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <input type="submit" value="محاسبه" class="button" onclick="calculate()">
+                    </div>
+                    <div class="frac1">
+                        <span>
+                            <h1 class="result"></h1>
+                        </span>
+                        <span class="symbol">/</span>
+                        <span class="bottom">
+                            <h1 class="result1"></h1>
+                        </span>
+                        <br>
+                    </div>
+                </div>
+                <br>
+                <div class="wrap" id="zirmajmo">
+                    <div class="into">
+                        <p style="color: #7aa228;font-weight: bold;font-family: 'IRANSans-web';font-size: 25px">تعداد
+                            زیرمجموعه</p>
+                        <div style="width: 100%">
+                            <span id="result2" style="display: inline-block !important;"></span>
+                            <span class="ozv-title">:تعداد زیرمجموعه های یک مجموعه<input type="number" class="input2"
+                                    id="tedad-ozv" required min="0" style="width: 50px;"> عضوی برابر است با </span>
+                            <input type="submit" value="محاسبه" class="button ozv-button" onclick="calculate2()">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="wrap" id="prime_yn">
+                    <div class="into">
+                        <p style="color: #7aa228;font-weight: bold;font-family: 'IRANSans-web';font-size: 25px">
+                            عدد اول بودن یا نبودن</p>
+                        <div style="width: 100%">
+                            <input type="number" class="input2" id="addade" required min="0" style="width: 50px;">
+                            <input type="submit" value="محاسبه" class="button ozv-button" onclick="checkPrime()">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="wrap" id="n_prime">
+                    <div class="into">
+                        <p
+                            style="color: #7aa228;font-weight: bold;font-family: 'IRANSans-web';font-size: 25px;direction: rtl  ;">
+                            n امین عدد اول</p>
+                        <div style="width: 100%">
+                            <input type="number" class="input2" id="kodom" required min="0" style="width: 50px;">
+                            <input type="submit" value="محاسبه" class="button ozv-button" onclick="findNthPrime()">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="other-container">
+                <div class="in-other-container">
+                    <div class="sidebar-widget">
+                        <div class="sidebar-widget-title">
+                            <h3>مطالب</h3>
+                        </div>
+                        <ul>
+                            <li class="cat-item cat-item-11"><a href="../olampiad/yek-matlab.html">5 کشور برتر در
+                                    المپیاد
+                                    جهانی ریاضی سال 2021</a></li>
+                            <li class="cat-item cat-item-28"><a href="#">پیدا کردن عدد گویا بین دو عدد گویا</a></li>
+                            <li class="cat-item cat-item-30"><a href="#">تهیه کننده : ایلیا منصوری</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/mohasebegar.js"></script>
+</body>
+
+</html>

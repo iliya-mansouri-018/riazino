@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خانه</title>
+    <link rel="stylesheet" href="index/css/style.css" />
+    <link rel="stylesheet" href="index/fonts/font.css" />
+    <link rel="stylesheet" href="index/css/animate.css">
+</head>
+
+<body>
+    <div class="nahda"></div>
+    <div class="buttons-holder">
+        <div class="left-button-and-summary">
+            <h3>
+                <span class="text-slider-items">
+                    ریاضینو, آزمون آنلاین , مقالات ریاضی , محاسبه گر های ریاضی
+                </span>
+                <strong class="text-slider"></strong>
+            </h3>
+            <a href="mataleb/mataleb.html" class="callout-btn2">مقالات</a>
+            <a href="mohasebat/mohasebegar.html" class="callout-btn2">محاسبه گر</a>
+            <!-- <a href="#" class="callout-btn2">آزمون</a> -->
+        </div>
+    </div>
+    <script src="../typed.js-master/lib/typed.min.js">
+    </script>
+
+    <!-- Add jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+
+    <!-- Add this script for successful 
+        implementation of typed.js  -->
+    <script>
+        if ($(".text-slider").length == 1) {
+
+            var typed_strings =
+                $(".text-slider-items").text();
+
+            var typed = new Typed(".text-slider", {
+                strings: typed_strings.split(", "),
+                typeSpeed: 50,
+                loop: true,
+                backDelay: 1000,
+                backSpeed: 30,
+            });
+        }
+    </script>
+</body>
+
+</html>

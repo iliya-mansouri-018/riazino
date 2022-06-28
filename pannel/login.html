@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="/index/fonts/font.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+<body>
+    <div class="wrap">
+        <div class="container">
+            <form action="" class="form">
+                <h1>ورود</h1>
+                <div class="input">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" class="user" placeholder="نام کاربری">
+                </div>
+                <div class="input">
+                    <i class="fa fa-key icon"></i>
+                    <input type="password" class="user" id="password" placeholder="رمز عبور">
+                </div>
+                <i class="fa fa-eye eye"></i>
+                <a href="number.html"><button type="button" class="submit">ورود</button></a>
+            </form>
+
+        </div>
+    </div>
+    <script>
+        const root = document.documentElement
+        const eye = document.querySelector(".eye")
+        passwordInput = document.querySelectorAll(".user")[1]
+        eye.addEventListener("click", function () {
+            root.classList.toggle("active")
+            eye.classList.toggle("fa-eye-slash")
+            passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password'
+            passwordInput.focus();
+        })
+    </script>
+</body>
+
+</html>

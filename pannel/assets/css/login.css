@@ -1,0 +1,115 @@
+* {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "IRANSans-web";
+  transition: all 1s;
+}
+body {
+  background: #fff;
+}
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+  flex-wrap: wrap;
+}
+.container {
+  width: 400px;
+  background: #fbfbfb;
+  border: 1px solid #7aa228;
+  border-radius: 10px;
+  padding: 30px;
+  overflow: hidden;
+}
+.input {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+.container h1 {
+  color: #7aa228;
+  text-align: center;
+  margin-bottom: 30px;
+}
+form {
+  width: 100%;
+}
+.user {
+  width: 100%;
+  height: 50px;
+  outline: none;
+  border: none;
+  background: #242424;
+  padding: 15px 60px 15px 60px;
+  color: #fff;
+  border-radius: 7px;
+  font-size: 14px;
+  text-align: right;
+  margin: 0;
+}
+.icon {
+  font-size: 22px;
+  position: absolute;
+  color: #7aa228;
+  padding: 14px;
+  background: #100f10;
+  border-radius: 0 7px 7px 0;
+}
+.eye {
+  float: left;
+  font-size: 22px;
+  color: #7aa228;
+  position: relative;
+  left: 6%;
+  top: -55px;
+  cursor: pointer;
+}
+.submit {
+  width: 100%;
+  padding: 7px 10px;
+  background-color: #7aa228;
+  border-radius: 7px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #485f19;
+}
+.active body {
+  background: #7aa228;
+}
+.active .container {
+  background: #cccccc;
+}
+.active .user {
+  background: #e6e6e6;
+  color: #7aa228;
+}
+.active .icon {
+  color: #7aa228;
+  background: #242424;
+}
+.active h1 {
+  color: #7aa228;
+}
+.active .eye {
+  color: #7aa228;
+}
+.active .forgot-password {
+  color: #7aa228;
+}
+.active .submit {
+  background: #7aa228;
+}
+.active .submit:hover {
+  background-color: #000080;
+}

@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  direction: rtl;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: black;
+  font-family: "IRANSans-web";
+  height: 100%;
+}
+.nahda {
+  background-image: url("/index/img/math_is_hard-800x321.jpg");
+  filter: blur(2px) brightness(50%);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.heading h3 {
+  color: black;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+.left-button-and-summary h3 {
+  color: white;
+  font-size: 35px;
+  font-family: "IRANSans-web";
+}
+.text-slider-items {
+  display: none;
+}
+.left-button-and-summary {
+  width: 100%;
+  margin-top: 200px;
+  text-align: center;
+}
+.buttons-holder {
+  font-weight: bold;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.callout-btn2 {
+  width: 200px;
+  color: #fff;
+  text-shadow: 0 1px 0 rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: B esfehan;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out 0s;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 20px;
+  padding: 18px 39px;
+  margin: 15px;
+  margin-top: 40px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-decoration: none;
+  background-color: #7aa228;
+  box-shadow: 0 3px #649403;
+}
+.callout-btn2:active {
+  box-shadow: none;
+  -webkit-transform: translate(0px, 5px);
+  -ms-transform: translate(0px, 5px);
+}
+.callout-btn2:focus {
+  background-color: #010101;
+  box-shadow: 0 3px #343532;
+}
+.callout-btn2:hover {
+  background-color: #5a722a;
+  box-shadow: 0 3px #4b533b;
+}
